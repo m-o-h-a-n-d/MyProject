@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+     "name": "Ahmed Mohamed",
+    "email": "ahmed@example.com",
+    "password": "123456",
+    "phone": "01012345678",
+    "token": "token_ahmed_123",
+    "age": 35,
+    "gender": "male",
+    "bloodType": "A+",
+    "nationalId": "29012345678901",
+    "address": "شارع التحرير، القاهرة، مصر",
+    "hasChronicDisease": true,
+    "chronicDisease": "ضغط الدم المرتفع",
+    "profileImage": "/user/patient.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Fatma Ali",
+    "email": "fatma@example.com",
+    "password": "123456",
+    "phone": "01098765432",
+    "token": "token_fatma_456",
+    "age": 28,
+    "gender": "female",
+    "bloodType": "O+",
+    "nationalId": "29512345678902",
+    "address": "حي الزمالك، القاهرة، مصر",
+    "hasChronicDisease": false,
+    "chronicDisease": null,
+    "profileImage": "/user/patient1.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Mahmoud Hassan",
+    "email": "mahmoud@example.com",
+    "password": "123456",
+    "phone": "01123456789",
+    "token": "token_mahmoud_789",
+    "age": 42,
+    "gender": "male",
+    "bloodType": "B+",
+    "nationalId": "28112345678903",
+    "address": "شارع فيصل، الجيزة، مصر",
+    "hasChronicDisease": true,
+    "chronicDisease": "السكري من النوع الثاني",
+    
+    "profileImage": "/user/patient2.jpg"
+  }
+]
