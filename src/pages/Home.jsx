@@ -1,6 +1,6 @@
 // Home Page - Main landing page
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -44,6 +44,7 @@ const Home = () => {
   useEffect(() => {
     if (reviews.length > 0) {
       const interval = setInterval(() => {
+  
         setCurrentReviewIndex((prevIndex) => (prevIndex + 1) % reviews.length);
       }, 5000); // Change slide every 5 seconds
 
@@ -80,13 +81,17 @@ const Home = () => {
     }
   };
 
+
+
+  const navigate = useNavigate();
+
   const handleSearch = () => {
     if (selectedDoctor) {
-      window.location.href = `/booking/${selectedDoctor}`;
+      navigate(`booking/${selectedDoctor}`);
     } else if (selectedSpecialty) {
-      window.location.href = `/specialty/${selectedSpecialty}`;
+      navigate(`specialty/${selectedSpecialty}`);
     } else {
-      window.location.href = '/specialties';
+      navigate(`specialties`);
     }
   };
 
@@ -112,7 +117,7 @@ const Home = () => {
                   Book Your Appointment Now
                 </Link>
                 <Link to="/dashboard" className="btn btn-outline-primary btn-lg change-btn btn-k" style={{ backgroundColor: 'rgba(255,255,255,0.2)', borderColor: 'white', color: 'white' }}>
-                 Patient Dashboard
+                Patient Dashboard
                 </Link>
               </div>
             </div>

@@ -22,7 +22,6 @@ export const login = async (email, password) => {
       
       return { success: true, user };
     } else {
-      // إذا لم يُوجد المستخدم
       return { 
         success: false, 
         message: 'البريد الإلكتروني أو كلمة المرور غير صحيحة' 
@@ -36,7 +35,6 @@ export const login = async (email, password) => {
   }
 };
 
-// دالة تسجيل الخروج - تحذف بيانات المستخدم من localStorage
 export const logout = () => {
   localStorage.removeItem('userToken');
   localStorage.removeItem('userData');
@@ -48,7 +46,6 @@ export const isAuthenticated = () => {
   return token !== null;
 };
 
-// دالة للحصول على بيانات المستخدم الحالي
 export const getCurrentUser = () => {
   const userData = localStorage.getItem('userData');
   return userData ? JSON.parse(userData) : null;

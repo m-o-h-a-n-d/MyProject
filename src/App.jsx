@@ -26,7 +26,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./styles/custom.css";
 
 const App = () => {
-
+ 
   // ⭐ Change Favicon Dynamically from API
     useEffect(() => {
         fetch("/data/settings.json")

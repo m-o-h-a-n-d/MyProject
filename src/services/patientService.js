@@ -1,6 +1,5 @@
-// Patient Service - خدمة بيانات المريض
 
-// دالة للحصول على بيانات المريض الكامل
+
 export const getPatientData = async (patientId) => {
   try {
     const response = await fetch('/data/patients.json');
@@ -13,7 +12,6 @@ export const getPatientData = async (patientId) => {
   }
 };
 
-// دالة للحصول على مواعيد المريض
 export const getPatientAppointments = async (patientId) => {
   try {
     const response = await fetch('/data/appointments.json');
@@ -25,7 +23,6 @@ export const getPatientAppointments = async (patientId) => {
   }
 };
 
-// دالة للحصول على التاريخ المرضي للمريض
 export const getMedicalHistory = async (patientId) => {
   try {
     const response = await fetch('/data/medicalHistory.json');
@@ -37,7 +34,6 @@ export const getMedicalHistory = async (patientId) => {
   }
 };
 
-// دالة للحصول على تحاليل المريض
 export const getLabTests = async (patientId) => {
   try {
     const response = await fetch('/data/labTests.json');
@@ -49,7 +45,6 @@ export const getLabTests = async (patientId) => {
   }
 };
 
-// دالة للحصول على الروشتات الطبية للمريض
 export const getPrescriptions = async (patientId) => {
   try {
     const response = await fetch('/data/prescriptions.json');
