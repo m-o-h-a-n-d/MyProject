@@ -39,6 +39,7 @@ const Login = () => {
 
     if (result.success) {
       // If login successful
+      // Redirect to dashboard
       const from = location.state?.from?.pathname || '/';
       navigate(from, { replace: true });
     } else {
